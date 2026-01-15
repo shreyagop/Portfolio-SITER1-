@@ -40,7 +40,7 @@
         </div>
     </header>
 
-    <section id="about" class="py-20 px-6 bg-white">
+    <section id="about" class="py-20 px-6 bg-white scroll-mt-16">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold mb-6">About Me</h2>
             <p class="text-lg text-slate-600 mb-4">
@@ -52,7 +52,7 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 px-6 max-w-4xl mx-auto">
+    <section id="skills" class="py-20 px-6 max-w-4xl mx-auto scroll-mt-16">
         <h2 class="text-3xl font-bold mb-10 text-center">Tech Stack</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">HTML5 & CSS3</div>
@@ -91,7 +91,7 @@
         <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
         <p class="text-slate-600 mb-10 text-lg">I am currently looking for new opportunities. My inbox is always open!</p>
         <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-            <a href="shreyagop09@gmail.com" class="text-blue-600 font-bold text-xl hover:underline italic">shreyagop09@gmail.com</a>
+            <a href="mailto:shreyagop09@gmail.com" class="text-blue-600 font-bold text-xl hover:underline italic">shreyagop09@gmail.com</a>
             <span class="hidden md:block text-slate-300">|</span>
             <div class="flex gap-6">
                 <a href="https://www.linkedin.com/in/shreya-gop-b888142a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-blue-600 transition font-medium text-slate-600">LinkedIn</a>
@@ -103,6 +103,22 @@
     <footer class="py-10 border-t border-slate-200 text-center text-slate-500 text-sm">
         <p> Shreya Gop</p>
     </footer>
+<script>
+    const observerOptions = {
+        threshold: 0.1
+    };
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+</script>
 </body>
 </html>
