@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer | Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing my software development projects and technical skills.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter text-blue-600">DEV.PORTFOLIO</a>
+            
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
+            Building digital products that <span class="text-blue-600">matter.</span>
+        </h1>
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            I'm a Software Developer focused on building clean, efficient, and user-centric applications. Let's build something great together.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">View My Work</a>
+            <a href="#contact" class="bg-white border border-slate-300 px-6 py-3 rounded-lg font-semibold hover:bg-slate-50 transition">Get In Touch</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <p class="text-lg text-slate-600 mb-4">
+                I am a passionate developer with a strong foundation in modern web technologies. I enjoy solving complex problems and turning ideas into reality through code.
+            </p>
+            <p class="text-lg text-slate-600">
+                Beyond coding, I'm a lifelong learner committed to staying updated with the latest industry trends and best practices in software architecture.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Tech Stack</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">HTML5 & CSS3</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">JavaScript (ES6+)</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">React.js</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Tailwind CSS</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Node.js</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Git & GitHub</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Firebase</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Responsive Design</div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                    <div class="h-48 bg-slate-700 flex items-center justify-center text-slate-500">
+                        [Project Image Placeholder]
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Project Name One</h3>
+                        <p class="text-slate-400 mb-6">A brief description of what this project does and the problems it solves.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-sm font-bold text-blue-400 hover:text-blue-300">GITHUB CODE →</a>
+                            <a href="#" class="text-sm font-bold text-blue-400 hover:text-blue-300">LIVE DEMO →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
+                    <div class="h-48 bg-slate-700 flex items-center justify-center text-slate-500">
+                        [Project Image Placeholder]
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Project Name Two</h3>
+                        <p class="text-slate-400 mb-6">A brief description of what this project does and the problems it solves.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-sm font-bold text-blue-400 hover:text-blue-300">GITHUB CODE →</a>
+                            <a href="#" class="text-sm font-bold text-blue-400 hover:text-blue-300">LIVE DEMO →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+        <p class="text-slate-600 mb-10 text-lg">I am currently looking for new opportunities. My inbox is always open!</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <a href="shreyagop09@gmail.com" class="text-blue-600 font-bold text-xl hover:underline italic">shreyagop09@gmail.com</a>
+            <span class="hidden md:block text-slate-300">|</span>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-600 transition font-medium text-slate-600">LinkedIn</a>
+                <a href="#" class="hover:text-blue-600 transition font-medium text-slate-600">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p> Shreya Gop</p>
+    </footer>
+
+</body>
+</html>
