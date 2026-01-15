@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Developer | Portfolio</title>
+    <title>Shreya Gop | Software Developer Portfolio</title>
     <meta name="description" content="Professional portfolio showcasing my software development projects and technical skills.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <style>
         body { font-family: 'Inter', sans-serif; }
+        
+        /* CSS for the Intersection Observer animations */
+        section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.7s ease-out;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 leading-relaxed">
@@ -17,7 +27,7 @@
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
             <a href="#" class="text-xl font-bold tracking-tighter text-blue-600">DEV.PORTFOLIO</a>
-            
+
             <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
@@ -55,31 +65,31 @@
     <section id="skills" class="py-20 px-6 max-w-4xl mx-auto scroll-mt-16">
         <h2 class="text-3xl font-bold mb-10 text-center">Tech Stack</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">HTML5 & CSS3</div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">JavaScript (ES6+)</div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">React.js</div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Tailwind CSS</div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Node.js</div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Git & GitHub</div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Firebase</div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold">Responsive Design</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">HTML5 & CSS3</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">JavaScript (ES6+)</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">React.js</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">Tailwind CSS</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">Node.js</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">Git & GitHub</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">Firebase</div>
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold hover:border-blue-300 transition-colors">Responsive Design</div>
         </div>
     </section>
 
-    <section id="projects" class="py-20 px-6 bg-slate-900 text-white">
+    <section id="projects" class="py-20 px-6 bg-slate-900 text-white scroll-mt-16">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold mb-12">Featured Projects</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-                    <div class="h-48 bg-slate-700 flex items-center justify-center text-slate-500">
-                        [Project Image Placeholder]
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500 transition-all">
+                    <div class="h-48 bg-slate-700 flex items-center justify-center text-slate-400">
+                        <img src="https://via.placeholder.com/600x400/1e293b/64748b?text=Portfolio+Project" alt="Project Preview" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Software Developer Portfolio</h3>
-                        <p class="text-slate-400 mb-6">A brief description of what this project does and the problems it solves.</p>
+                        <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Developer Portfolio</h3>
+                        <p class="text-slate-400 mb-6">A high-performance personal portfolio built with HTML, Tailwind CSS, and JavaScript featuring smooth scrolling and reveal animations.</p>
                         <div class="flex gap-4">
-                            <a href="https://github.com/shreyagop/Portfolio-SITER1-.git" class="text-sm font-bold text-blue-400 hover:text-blue-300">GITHUB CODE →</a>
-                            <a href="https://github.com/shreyagop/Portfolio-SITER1-.git" class="text-sm font-bold text-blue-400 hover:text-blue-300">LIVE DEMO →</a>
+                            <a href="https://github.com/shreyagop/Portfolio-SITER1-.git" target="_blank" class="text-sm font-bold text-blue-400 hover:text-blue-300">GITHUB CODE →</a>
+                            <a href="#" class="text-sm font-bold text-blue-400 hover:text-blue-300">LIVE DEMO →</a>
                         </div>
                     </div>
                 </div>
@@ -87,25 +97,27 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center scroll-mt-16">
         <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
         <p class="text-slate-600 mb-10 text-lg">I am currently looking for new opportunities. My inbox is always open!</p>
         <div class="flex flex-col md:flex-row justify-center items-center gap-6">
             <a href="mailto:shreyagop09@gmail.com" class="text-blue-600 font-bold text-xl hover:underline italic">shreyagop09@gmail.com</a>
             <span class="hidden md:block text-slate-300">|</span>
             <div class="flex gap-6">
-                <a href="https://www.linkedin.com/in/shreya-gop-b888142a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-blue-600 transition font-medium text-slate-600">LinkedIn</a>
-                <a href="https://github.com/shreyagop" class="hover:text-blue-600 transition font-medium text-slate-600">GitHub</a>
+                <a href="https://www.linkedin.com/in/shreya-gop-b888142a3" target="_blank" class="hover:text-blue-600 transition font-medium text-slate-600">LinkedIn</a>
+                <a href="https://github.com/shreyagop" target="_blank" class="hover:text-blue-600 transition font-medium text-slate-600">GitHub</a>
             </div>
         </div>
     </section>
 
     <footer class="py-10 border-t border-slate-200 text-center text-slate-500 text-sm">
-        <p> Shreya Gop</p>
+        <p>© 2026 Shreya Gop. All rights reserved.</p>
     </footer>
+
 <script>
     const observerOptions = {
-        threshold: 0.1
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
