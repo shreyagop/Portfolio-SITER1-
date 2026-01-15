@@ -1,0 +1,51 @@
+/* Custom Styles & Animations */
+
+:root {
+    --primary-blue: #2563eb;
+    --dark-bg: #0f172a;
+}
+
+/* 1. Smooth Fade-In Animation for Sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 2. Custom Project Card Hover Effect */
+.project-card {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+/* 3. Modern Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* 4. Text Selection Color */
+::selection {
+    background-color: #bfdbfe;
+    color: #1e40af;
+}
